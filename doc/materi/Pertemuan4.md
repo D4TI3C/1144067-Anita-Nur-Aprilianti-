@@ -16,19 +16,20 @@ Seorang petani akan menyebrangkan seekor ayam, seekor harimau dan gabah dengan s
  
 Penyelesaian :
 1. Identifikasi ruang keadaan
-Permalasahan ini dilambangkan dengan (jumlah ayam, gabah, harimau dan petani)
+Permalasahan ini dilambangkan dengan (jumlah ayam, gabah, harimau dan petani) <br>
 Contoh : daerah asal (0,1,1,1) = pulau kiri tidak ada ayam, ada gabah, ada harimau, ada petani
  
 2. Kondisi awal dan akhir
-Kondisi Awal
-Pulau Kiri   = (1,1,1,1)
-Pulau Kanan  = (0,0,0,0)
+Kondisi Awal <br>
+Pulau Kiri   = (1,1,1,1) <br>
+Pulau Kanan  = (0,0,0,0) <br>
  
-Kondisi Akhir 
-Pulau Kiri  = (0,0,0,0)
-Pulau Kanan = (1,1,1,1)
+Kondisi Akhir  <br>
+Pulau Kiri  = (0,0,0,0) <br>
+Pulau Kanan = (1,1,1,1) <br>
 
 3. Aturan - aturan
+
 1. Ayam Menyebrang
 2. Gabah Menyebrang
 3. Harimau Menyebrang
