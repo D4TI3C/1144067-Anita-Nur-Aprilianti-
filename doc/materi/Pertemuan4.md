@@ -19,12 +19,10 @@ Penyelesaian :
 Permalasahan ini dilambangkan dengan (jumlah ayam, gabah, harimau dan petani) <br>
 Contoh : daerah asal (0,1,1,1) = pulau kiri tidak ada ayam, ada gabah, ada harimau, ada petani
 
-2. Kondisi awal dan akhir
+2. Kondisi awal dan akhir <br>
 Kondisi Awal <br>
 Pulau Kiri   = (1,1,1,1) <br>
 Pulau Kanan  = (0,0,0,0) <br>
-
-Kondisi Akhir <br>
 
 Kondisi Akhir <br> 
 Pulau Kiri  = (0,0,0,0) <br>
