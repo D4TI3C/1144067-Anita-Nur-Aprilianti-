@@ -23,8 +23,14 @@ Contoh : daerah asal (0,1,1,1) = pulau kiri tidak ada ayam, ada gabah, ada harim
 Kondisi Awal <br>
 Pulau Kiri   = (1,1,1,1) <br>
 Pulau Kanan  = (0,0,0,0) <br>
-<br>
-Kondisi Akhir <br>
+
+Kondisi Awal <br>
+Pulau Kiri   = (1,1,1,1) <br>
+Pulau Kanan  = (0,0,0,0) <br>
+
+Kondisi Akhir <br> 
+Pulau Kiri  = (0,0,0,0) <br>
+Pulau Kanan = (1,1,1,1) <br>
 
 3. Aturan - aturan
 
