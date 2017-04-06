@@ -38,6 +38,7 @@ Pulau Kanan = (1,1,1,1)
 7. Petani Kembali
 
 4. Solusi yang ditemukan
+
 Pulau Kiri | Pulau Kanan | Aturan yang dipakai |
 ---------|----------|---------------|
 (1,1,1,1) | (0,0,0,0) | 1       |
