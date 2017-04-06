@@ -23,20 +23,22 @@ Contoh : daerah asal (0,1,1,1) = pulau kiri tidak ada ayam, ada gabah, ada harim
 Kondisi Awal <br>
 Pulau Kiri   = (1,1,1,1) <br>
 Pulau Kanan  = (0,0,0,0) <br>
- 
+
 Kondisi Akhir  <br>
 Pulau Kiri  = (0,0,0,0) <br>
 Pulau Kanan = (1,1,1,1) <br>
 
 3. Aturan - aturan
 
-1. Ayam Menyebrang
-2. Gabah Menyebrang
-3. Harimau Menyebrang
-4. Ayam Kembali
-5. Gabah Kembali
-6. Harimau Kembali
-7. Petani Kembali
+Aturan Ke- | Pulau Kanan | 
+---------|-----------|
+1 | Ayam Menyebrang    | 
+2 | Gabah Menyebrang   | 
+3 | Harimau Menyebrang | 
+4 | Ayam Kembali       | 
+5 | Gabah Kembali      | 
+6 | Harimau Kembali    | 
+7 | Petani Kembali     |
 
 4. Solusi yang ditemukan
 
