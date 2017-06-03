@@ -28,31 +28,22 @@ Pengetahuan tentang pengenalan suatu kalimat yang sudah dibaca dan dikenali sebe
 Pengetahuan mencakup arti sebuah kata secara umum dan arti khusus bagi suatu kata dalam suatu percakapan
  
 Speech recognition merupakan system yang digunakan untuk mengenali perintah dari suara manusia dan diterjemahkan menjadi suatu data yang dimengerti oleh komputer. Cara menginstal speec recognition di window, yaitu :
+1.      Install pyaudio yang digunakan untuk menginput micropone.
+       pip install pyaudio
 
-      1.      Install pyaudio yang digunakan untuk menginput micropone.
+2.      Install PocketSphinx untuk menggunakan Sphinx recognizer.
 
-pip install pyaudio
+       pip install wheel
 
+3.      install Google API Client Library for Python untuk menggunakan Google Cloud Speech API.
 
-      2.      Install PocketSphinx untuk menggunakan Sphinx recognizer.
+        pip install google-api-python-client
 
-pip install wheel
+ 4.      Install SpeechRecognition. 
 
+      pip install SpeechRecognition
 
-
-       3.      install Google API Client Library for Python untuk menggunakan Google Cloud Speech API.
-
-pip install google-api-python-client
-
-
-
-      4.      Install SpeechRecognition.
-
- pip install SpeechRecognition
-
-       
-
-        5.      Selesai
+5.      Selesai
 
 ## Kesimpulan  
 Pengolahan bahasa alami (Natural Languange Processing) adalah melakukan proses pembuatan model komputasi dari Bahasa sehingga dapat terjadi suatu interaksi antara manusia dengan computer melalu perantara bahasa alami
@@ -66,5 +57,5 @@ Sebaiknya selalu diadakan praktik tiap minggu agar mahasiswa lebih memahami tent
 [3]   https://pypi.python.org/pypi/SpeechRecognition/ 
 
 ## Scan Plagiarisme :
-[1] Smallseotools <br>
-[2] Duplichecker
+[1] https://drive.google.com/file/d/0B3mytGJbyhIhNGJ3QkE1YlVHX0k/view <br>
+[2] https://drive.google.com/file/d/0B3mytGJbyhIhb3pJRVZJR1pnajg/view
