@@ -75,7 +75,7 @@ Mod merupakan operasi pembagian yang memberikan hasil sisa hasil bagi. Hasil dar
 1144067 MOD 1
 
 ## Kesimpulan  
-Sistem pakar merupakan perangkat lunak yang digunakan untuk memecahkan masalah yang biasanya deiselesaikan oleh seorang 
+Sistem pakar merupakan perangkat lunak yang digunakan untuk memecahkan masalah yang biasanya deiselesaikan oleh seorang pakar
 
 ## Saran 
 Sebaiknya selalu diadakan praktik tiap minggu agar mahasiswa lebih memahami tentang materi kecerdasan buatan
