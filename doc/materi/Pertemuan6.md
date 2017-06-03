@@ -30,7 +30,6 @@ Aturan		: 1. Jika A dan B maka F <br>
 			  4. Jika E dan H maka I <br>
 Keterangan : <br>
 Pertama fakta A dan B diketahui, aturan 1 mengetahui F. fakta C dan D diketahui, aturan 2 mengetahui G. fakta F dan G diketahui, aturan 3 mengetahui H. aturan 4 I Karena H dan E diketahui.
-
 b.	Backward Chaining
 Interpreter memeriksa aturan dari fakta dalam basis data yaitu hipotesa. Menguji bagian THEN mencari yang sesuai. Proses berantai terus berlangsung sampai hipotesa terbukti kebenaranya <br>
 Keterangan : <br>
@@ -40,7 +39,6 @@ Mengetahui I, dibuktikan E dan H (aturan 4). Membuktikan H, dibuktikan F dan G (
 Teknik ini dipakai pada situasi dimana hasil yang dieksak tidak mungkin dilakukan, sehingga pemecahan yang diperoleh lebih bersifat cukup. Terdapat dua pendekatan dalam menyusun mekanisme inferens berbasis aturan : <br>
 a.	Depth First Search <br>
 Bermula dari node akar dan bergerak ke bawah untuk memeriksa semua anak turunan dari suatu cabang sebelum ke cabang lain. <br>
-
 b.	Breadth First Search <br>
 Pelacakan dilakukan terhadap semua cabang, baru dietruskan ke level yang lebih dalam. <br>
 
@@ -56,24 +54,24 @@ b.	Fuzzy <br>
 Suatu cara yang tepat untuk memetakan suatu ruang input ke dalam suatu ruang output <br>
 Contoh : <br>
 IF disk drive berisi = yes (fv = 0.8) <br>
-AND format disket menimbulkan kerusakan = yes (fv = 0.3)
-THEN status disk drive rusak (cf = 0.9)
-Dengan memakai kalkulus fuzzy dipilih nilai minimum 0.8 dan 0.3
-Jadi, confidende factor untuk aturan adalah 0.3 * 0.9 = 27
-c.	Confident Factor Union Methods
-Suatu alternative pendekatan untuk menentukan confidence factor dari beberapa aturan
-C (cf) = cf1 + cf2 - cf1 * cf2
-Dimana :
-C (cf) = hasil akhir dari factor kepastian (cf)
-cf1    = nilai factor kepastian (cf) dari aturan 1
-cf2    = nilai factor kepastian (cf) dari aturan 2
-Contoh :
-cf1 = 0.2		cf2 = 0.5
-C(cf) = 0.2 + 0.5 - 0.2 * 0.5 = 0.6
-Bila aturan ke 3 dengan cf3 = 0.5, maka :
-C(cf) = 0.6 + 0.5 - 0.6 * 0.5 = 0.8
+AND format disket menimbulkan kerusakan = yes (fv = 0.3) <br>
+THEN status disk drive rusak (cf = 0.9) <br>
+Dengan memakai kalkulus fuzzy dipilih nilai minimum 0.8 dan 0.3 <br>
+Jadi, confidende factor untuk aturan adalah 0.3 * 0.9 = 27 <br>
+c.	Confident Factor Union Methods <br>
+Suatu alternative pendekatan untuk menentukan confidence factor dari beberapa aturan <br>
+C (cf) = cf1 + cf2 - cf1 * cf2 <br>
+Dimana : <br>
+C (cf) = hasil akhir dari factor kepastian (cf) <br>
+cf1    = nilai factor kepastian (cf) dari aturan 1 <br>
+cf2    = nilai factor kepastian (cf) dari aturan 2 <br>
+Contoh : <br>
+cf1 = 0.2		cf2 = 0.5 <br>
+C(cf) = 0.2 + 0.5 - 0.2 * 0.5 = 0.6 <br>
+Bila aturan ke 3 dengan cf3 = 0.5, maka : <br>
+C(cf) = 0.6 + 0.5 - 0.6 * 0.5 = 0.8 <br>
 
-Mod merupakan operasi pembagian yang memberikan hasil sisa hasil bagi. Hasil dari mod harus harus lebih dari sama dengan NOL dan kurang dari pembagi dan memberikan hasil bilangan bulat. 
+Mod merupakan operasi pembagian yang memberikan hasil sisa hasil bagi. Hasil dari mod harus harus lebih dari sama dengan NOL dan kurang dari pembagi dan memberikan hasil bilangan bulat. <br>
 1144067 MOD 1
 
 ## Kesimpulan  
