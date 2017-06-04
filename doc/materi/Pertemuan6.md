@@ -1,89 +1,60 @@
 # Sistem Pakar
 
 ## Latar Belakang Masalah
-Menjelaskan bagaimana membuat computer seolah-olah menjadi pakar di dalam kecerdasan buatan
+Menjelaskan metode Backward Chaining bagaimana membuat komputer seolah-olah menjadi pakar di dalam kecerdasan buatan
 
 ## Permasalahan dan Solusi Masalah
-Sistem pakar adalah system informasi yang berisi pengetahuan dari pakar sehingga dapat digunakan untuk kolsuntasi. Bentuk umum system pakar merupakan suatu program yang dibuat berdasarka suatu set aturan yang menganalisis informasi (diberikan oleh pengguna system) mengenai suatu kelas masalah spesifik serta analisis matematis dari masalah tersebut. Menerapkan aturan-aturan serta pengetahuan-pengetahuan melalui Struktur Sistem Pakar :
+Backward chaining adalah metode inferensi yang dapat dijelaskan secara bahasa sehari-hari sebagai bekerja mundur dari tujuan. Ini digunakan dalam teorema-teorema otomatis, mesin inferensi, dan aplikasi kecerdasan buatan lainnya. 
  
-Karakterisitik yang membedakan sistem pakar dengan perangkat lunak biasa, diantaranya :
-1.	Kemungkinan Banyak Jawaban
-Memakan waktu lama untuk menguji dan mempelajari jawaban, Karena ruang persoalan berukuran besar dan tak pasti
-2.	Data Kabur
-System pakar mencapai konklusi yang tidak pasti Karena inforasi dipakai terlalu sering berupa data yang kabur
-3.	Heuristik (ilmu pengetahuan yang berhubungan dengan suatu penemuan)
-Menggunakan pengetahuan untuk memperoleh suatu solusi
-4.	Informatif (memberi informasi)
-Memberikan kemudahan jawaban kepada user, sehingga user merasa puas dengan jawaban yang diberikan system pakar 
+Runut balik (Backward chaining) merupakan strategi pencarian yang arahnya kebalikan dari runut maju (Fordward Chaining). Proses pencarian dimulai dari tujuan dan kesimpulan menjadi solusi permasalahan yang dihadapi. Mesin inferensi mencari kaidah-kaidah dalam basis pengetahuan yang kesimpulannya merpakan soluasi yang ingin dicapai, dari kaidah-kaidah yang diperoleh masing-masing kesimpula dirunut balik jalur yang mengarah ke kesimpulan tersebut.  Jika nilai dari atribut-atribut yang mengarah ke kesimpulan tersebut sesuai dengan data yang diberikan maka kesimpulan tersebut merupakan solusi yang dicari, jika tidak sesuai maka kesimpulan tersebut bukan solusi yang dicari. Runut balik memulai proses pencarian dengan suatu tujuan sehingga strategi ini disebut juga goal-driven.  
+
+Studi Kasus : <br>
+Menelusuri kerusakan monitor <br>
  
+1. Rule base <br>
+Berisi himpunan aturan yang berhubungan dengan kerusakan komputer, pencarian bagian kerusakan, jenis kerusakan dan gejala kerusakan. Sebagai langkah awal pemecahan masalah dengan cara menemukan fakta-fakta yang sesuai dengan rule-rule (IF-THEN) diatas, selanjutnya menyusun data fakta dan menginisialisasi dengan menggunakan variable-variabel. 
+<p align ="center">
+<img src="../../img/P1.JPG" width="400px">
+</p> 
 
-Mekanisme inferensi dalam system pakar menerapkan pengetahuan untuk solusi problema yang sebenarnya.ada beberapa pendeketan dalam menyusun struktur mekanisme inferensi :
-1.	Inferensi <br>
-Aturan diekspresikan dalam bentuk kondisi IF-THEN. IF adalah kondisi yang telah ada dan THEN adalah aksi atau tanggapan lain yang akan timbul. Terdapat dua pendekatan dalam menyusun mekanisme inferens berbasis aturan : <br>
-a.	Forward Chaining <br> 
-Permasalahan telah diketahuikeadaan awalnya (bentuk IF) dan ingin diketahui akibatnya (bentuk THEN) <br>
-Contoh : <br>
-Awal fakta		: A,B,C,D,E <br>
-Aturan		: 1. Jika A dan B maka F <br>
-			  2. Jika C dan D maka G <br>
-			  3. Jika F dan G maka H <br>
-			  4. Jika E dan H maka I <br>
-Keterangan : <br>
-Pertama fakta A dan B diketahui, aturan 1 mengetahui F. fakta C dan D diketahui, aturan 2 mengetahui G. fakta F dan G diketahui, aturan 3 mengetahui H. aturan 4 I Karena H dan E diketahui.
-b.	Backward Chaining
-Interpreter memeriksa aturan dari fakta dalam basis data yaitu hipotesa. Menguji bagian THEN mencari yang sesuai. Proses berantai terus berlangsung sampai hipotesa terbukti kebenaranya <br>
-Keterangan : <br>
-Mengetahui I, dibuktikan E dan H (aturan 4). Membuktikan H, dibuktikan F dan G (aturan 3). Membuktikan F, dibuktikan A dan B (aturan 1). Membutktikan G, dibuktikan C dan D (aturan 2). 
+2. Fakta-fakta <br>
+A,B,C,D, dan E diberikan pemecahan masalah yaitu berupa data-data variable dengan kategori kerusakan, jenis kerusakan, gejala kerusakan dan deteksi kerusakan. Oleh inference engine dilakukan eksekusi data dengan mencocokan knowledge base (IF-THEN) yang telah dibuat dengan fakta-fakta yang tersimpan di dalam database. 
+<p align ="center">
+<img src="../../img/P2.JPG" width="400px">
+</p>
 
-2.	Pelacakan <br>
-Teknik ini dipakai pada situasi dimana hasil yang dieksak tidak mungkin dilakukan, sehingga pemecahan yang diperoleh lebih bersifat cukup. Terdapat dua pendekatan dalam menyusun mekanisme inferens berbasis aturan : <br>
-a.	Depth First Search <br>
-Bermula dari node akar dan bergerak ke bawah untuk memeriksa semua anak turunan dari suatu cabang sebelum ke cabang lain. <br>
-b.	Breadth First Search <br>
-Pelacakan dilakukan terhadap semua cabang, baru dietruskan ke level yang lebih dalam. <br>
+3. Database <br>
+Memuat fakta A,B,C,D,E,U,V dan W berupa data-data variable kategori, jenis, gejala dan deteksi kerusakan. Pada table ini terjadi penambahan fakta U,V, dan W karena terjadi eksekusi terhadap data-data yang terdapat pada knowledge base.
+<p align ="center">
+<img src="../../img/P3.JPG" width="400px">
+</p>
 
-3.	Probabilitas <br>
-Suatu kejadian yang menunjukankemungkinan terjadinya suatu kejadian. Nilainya dianta 0 dan 1. Kejadian yang mempunyai nilai probablitias 1 adalah kejadian yang pasti terjadi atau sesuatu telah terjadi. Terdapat tiga pendekatan dalam menyusun mekanisme inferens berbasis aturan : <br>
-a.	Bayes <br>
-Menyatakan seberapa jauh derajat kepercayaan subjektif harus berubah secara rasional ketika ada petunjuk baru <br>
-Contoh : <br>
-Jika selalu berbunyi = ya <br>
-Maka status disk drive = tidak sempurna (cf = 0.8) <br>
-Jadi suatu aturan mempunyai dua impilkasi penting. Pertama menyatakan user mampu membedakan antara "normal" da "suara aneh". Kedua bila confidence factor dinyatakan suatu probablitias status disk drive tidak sempurna didapat harga = 1 - 0.8 = 0.2 = 20 %. <br>
-b.	Fuzzy <br>
-Suatu cara yang tepat untuk memetakan suatu ruang input ke dalam suatu ruang output <br>
-Contoh : <br>
-IF disk drive berisi = yes (fv = 0.8) <br>
-AND format disket menimbulkan kerusakan = yes (fv = 0.3) <br>
-THEN status disk drive rusak (cf = 0.9) <br>
-Dengan memakai kalkulus fuzzy dipilih nilai minimum 0.8 dan 0.3 <br>
-Jadi, confidende factor untuk aturan adalah 0.3 * 0.9 = 27 <br>
-c.	Confident Factor Union Methods <br>
-Suatu alternative pendekatan untuk menentukan confidence factor dari beberapa aturan <br>
-C (cf) = cf1 + cf2 - cf1 * cf2 <br>
-Dimana : <br>
-C (cf) = hasil akhir dari factor kepastian (cf) <br>
-cf1    = nilai factor kepastian (cf) dari aturan 1 <br>
-cf2    = nilai factor kepastian (cf) dari aturan 2 <br>
-Contoh : <br>
-cf1 = 0.2		cf2 = 0.5 <br>
-C(cf) = 0.2 + 0.5 - 0.2 * 0.5 = 0.6 <br>
-Bila aturan ke 3 dengan cf3 = 0.5, maka : <br>
-C(cf) = 0.6 + 0.5 - 0.6 * 0.5 = 0.8 <br>
+<br>
 
-Mod merupakan operasi pembagian yang memberikan hasil sisa hasil bagi. Hasil dari mod harus harus lebih dari sama dengan NOL dan kurang dari pembagi dan memberikan hasil bilangan bulat. <br>
-1144067 MOD 1
+<p align ="center">
+<img src="../../img/P4.JPG" width="400px">
+</p>
+
+Dari hasil eksekusi inference backward chaining dapat digambarkan dengan pla permodelan sebagai berikut : <br>
+<p align ="center">
+<img src="../../img/P5.JPG" width="400px">
+</p>
+
+Pencocokan fakta dimulai dari sebelah kanan (THEN). Penalaran dimulai dari hipotesis dan untuk menguji kebenaran hipotesis dicari fakta-fakta yang ada dalam knowledge base. Fakta awal yang diberikan adalah A ( A bernilai benar), setelah dieksekusi dapat dibuktikan (hipotesis : W) bernilai benar.
+
 
 ## Kesimpulan  
-Sistem pakar merupakan perangkat lunak yang digunakan untuk memecahkan masalah yang biasanya deiselesaikan oleh seorang pakar
+Sistem pakar yang diimplementasikan menggunakan inferensi backward chaining akan memberikan solusi dari suatu masalah berdasarkan kumpulan pengetahuan yang ada yang kemampuannya menyerupai seorang pakar komputer dalam mencari dan memberikan petunjuk mengenai berbagai masalah yang terjadi
 
 ## Saran 
 Sebaiknya selalu diadakan praktik tiap minggu agar mahasiswa lebih memahami tentang materi kecerdasan buatan
 
 ## Daftar Pustaka
-[1] https://id.wikipedia.org/wiki/Sistem_pakar <br>
-[2[ http://entin.lecturer.pens.ac.id/Kecerdasan%20Buatan/Buku/Bab%206%20Sistem%20Pakar.pdf
+[1] https://en.wikipedia.org/wiki/Backward_chaining <br>
+[2] https://lppm.trigunadharma.ac.id/public/fileJurnal/hpxZJurnal%2011_1_2012%20M-Dahria-4.pdf  
+
 
 ## Scan Plagiarisme :
-[1] https://drive.google.com/open?id=0B3mytGJbyhIhN1pPVFUtYmtYcEk <br>
-[2] https://drive.google.com/open?id=0B3mytGJbyhIhUjZqb0pPTWNwbzg 
+[1] https://drive.google.com/open?id=0B3mytGJbyhIhOXR2NldwNXFGcnM <br>
+[2] https://drive.google.com/open?id=0B3mytGJbyhIhQ2IwV1FDNEhmLTA 
+
