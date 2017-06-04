@@ -1,4 +1,4 @@
-# Sistem Pakar
+# Backward Chaining
 
 ## Latar Belakang Masalah
 Menjelaskan metode Backward Chaining bagaimana membuat komputer seolah-olah menjadi pakar di dalam kecerdasan buatan
